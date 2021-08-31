@@ -15,6 +15,10 @@
 		CFAF387226DE65C5009B68E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAF387026DE65C5009B68E2 /* LaunchScreen.storyboard */; };
 		CFAF387D26DE65C5009B68E2 /* ToDoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF387C26DE65C5009B68E2 /* ToDoAppTests.swift */; };
 		CFAF388826DE65C5009B68E2 /* ToDoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF388726DE65C5009B68E2 /* ToDoAppUITests.swift */; };
+		CFAF38A326DE67A4009B68E2 /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF38A226DE67A4009B68E2 /* TaskTests.swift */; };
+		CFAF38AC26DE6870009B68E2 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF38AB26DE6870009B68E2 /* Task.swift */; };
+		CFAF38B126DE6CC3009B68E2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF38B026DE6CC3009B68E2 /* Location.swift */; };
+		CFAF38B626DE6E15009B68E2 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF38B526DE6E15009B68E2 /* LocationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		CFAF388326DE65C5009B68E2 /* ToDoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAF388726DE65C5009B68E2 /* ToDoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppUITests.swift; sourceTree = "<group>"; };
 		CFAF388926DE65C5009B68E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAF38A226DE67A4009B68E2 /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
+		CFAF38AB26DE6870009B68E2 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		CFAF38B026DE6CC3009B68E2 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		CFAF38B526DE6E15009B68E2 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +107,10 @@
 		CFAF386426DE65C0009B68E2 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
-				CFAF386526DE65C0009B68E2 /* AppDelegate.swift */,
-				CFAF386726DE65C0009B68E2 /* SceneDelegate.swift */,
-				CFAF386926DE65C0009B68E2 /* ViewController.swift */,
-				CFAF386B26DE65C0009B68E2 /* Main.storyboard */,
-				CFAF386E26DE65C5009B68E2 /* Assets.xcassets */,
-				CFAF387026DE65C5009B68E2 /* LaunchScreen.storyboard */,
-				CFAF387326DE65C5009B68E2 /* Info.plist */,
+				CFAF389A26DE65F3009B68E2 /* Controller */,
+				CFAF389926DE65EA009B68E2 /* View */,
+				CFAF389826DE65E0009B68E2 /* Model */,
+				CFAF389B26DE6640009B68E2 /* Supporting files */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			children = (
 				CFAF387C26DE65C5009B68E2 /* ToDoAppTests.swift */,
 				CFAF387E26DE65C5009B68E2 /* Info.plist */,
+				CFAF38A726DE67BC009B68E2 /* Model */,
 			);
 			path = ToDoAppTests;
 			sourceTree = "<group>";
@@ -126,6 +132,52 @@
 				CFAF388926DE65C5009B68E2 /* Info.plist */,
 			);
 			path = ToDoAppUITests;
+			sourceTree = "<group>";
+		};
+		CFAF389826DE65E0009B68E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF38AB26DE6870009B68E2 /* Task.swift */,
+				CFAF38B026DE6CC3009B68E2 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFAF389926DE65EA009B68E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFAF389A26DE65F3009B68E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF386926DE65C0009B68E2 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CFAF389B26DE6640009B68E2 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF386526DE65C0009B68E2 /* AppDelegate.swift */,
+				CFAF386726DE65C0009B68E2 /* SceneDelegate.swift */,
+				CFAF386B26DE65C0009B68E2 /* Main.storyboard */,
+				CFAF386E26DE65C5009B68E2 /* Assets.xcassets */,
+				CFAF387026DE65C5009B68E2 /* LaunchScreen.storyboard */,
+				CFAF387326DE65C5009B68E2 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		CFAF38A726DE67BC009B68E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF38A226DE67A4009B68E2 /* TaskTests.swift */,
+				CFAF38B526DE6E15009B68E2 /* LocationTests.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +310,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAF38AC26DE6870009B68E2 /* Task.swift in Sources */,
 				CFAF386A26DE65C0009B68E2 /* ViewController.swift in Sources */,
+				CFAF38B126DE6CC3009B68E2 /* Location.swift in Sources */,
 				CFAF386626DE65C0009B68E2 /* AppDelegate.swift in Sources */,
 				CFAF386826DE65C0009B68E2 /* SceneDelegate.swift in Sources */,
 			);
@@ -268,6 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAF38A326DE67A4009B68E2 /* TaskTests.swift in Sources */,
+				CFAF38B626DE6E15009B68E2 /* LocationTests.swift in Sources */,
 				CFAF387D26DE65C5009B68E2 /* ToDoAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +494,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59U3Y8MDY6;
-				INFOPLIST_FILE = ToDoApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ToDoApp/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +513,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59U3Y8MDY6;
-				INFOPLIST_FILE = ToDoApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ToDoApp/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
