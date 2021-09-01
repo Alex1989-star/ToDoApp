@@ -19,6 +19,8 @@
 		CFAF38AC26DE6870009B68E2 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF38AB26DE6870009B68E2 /* Task.swift */; };
 		CFAF38B126DE6CC3009B68E2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF38B026DE6CC3009B68E2 /* Location.swift */; };
 		CFAF38B626DE6E15009B68E2 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF38B526DE6E15009B68E2 /* LocationTests.swift */; };
+		CFAF38BC26DE75DF009B68E2 /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF38BB26DE75DF009B68E2 /* TaskManagerTests.swift */; };
+		CFAF38C526DE766C009B68E2 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF38C426DE766C009B68E2 /* TaskManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		CFAF38AB26DE6870009B68E2 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		CFAF38B026DE6CC3009B68E2 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		CFAF38B526DE6E15009B68E2 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
+		CFAF38BB26DE75DF009B68E2 /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
+		CFAF38C426DE766C009B68E2 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		CFAF386426DE65C0009B68E2 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				CFAF38C326DE765E009B68E2 /* Manager */,
 				CFAF389A26DE65F3009B68E2 /* Controller */,
 				CFAF389926DE65EA009B68E2 /* View */,
 				CFAF389826DE65E0009B68E2 /* Model */,
@@ -118,6 +123,7 @@
 		CFAF387B26DE65C5009B68E2 /* ToDoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				CFAF38BA26DE75B6009B68E2 /* Manager */,
 				CFAF387C26DE65C5009B68E2 /* ToDoAppTests.swift */,
 				CFAF387E26DE65C5009B68E2 /* Info.plist */,
 				CFAF38A726DE67BC009B68E2 /* Model */,
@@ -178,6 +184,22 @@
 				CFAF38B526DE6E15009B68E2 /* LocationTests.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CFAF38BA26DE75B6009B68E2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF38BB26DE75DF009B68E2 /* TaskManagerTests.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CFAF38C326DE765E009B68E2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF38C426DE766C009B68E2 /* TaskManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAF38C526DE766C009B68E2 /* TaskManager.swift in Sources */,
 				CFAF38AC26DE6870009B68E2 /* Task.swift in Sources */,
 				CFAF386A26DE65C0009B68E2 /* ViewController.swift in Sources */,
 				CFAF38B126DE6CC3009B68E2 /* Location.swift in Sources */,
@@ -324,6 +347,7 @@
 			files = (
 				CFAF38A326DE67A4009B68E2 /* TaskTests.swift in Sources */,
 				CFAF38B626DE6E15009B68E2 /* LocationTests.swift in Sources */,
+				CFAF38BC26DE75DF009B68E2 /* TaskManagerTests.swift in Sources */,
 				CFAF387D26DE65C5009B68E2 /* ToDoAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
